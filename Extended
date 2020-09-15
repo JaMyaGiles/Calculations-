@@ -1,0 +1,30 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner calculator = new Scanner(System.in);
+        System.out.println ("Product/Sum Calculator: type in the first value");
+        int Value1 = calculator.nextInt();
+        System.out.println ("Product/Sum Calculator: type in the second value");
+        int Value2 = calculator.nextInt();
+
+        System.out.println ("Sum = " + (Value1 + Value2));
+        System.out.println ("Product = "+ (Value1 * Value2));
+
+        System.out.println ("Square Calculator: type in the value");
+        int Square = calculator.nextInt();
+
+        System.out.println ("The square root of " + Square + " = " + ( Square * Square));
+
+        Scanner insta = new Scanner(System.in);
+        System.out.println ("Lets make a funny Instagram name, What is your favorite color?");
+        String color = insta.nextLine();
+        System.out.println (color + " is a nice color, What is the last thing you ate today?");
+        String ate = insta.nextLine();
+        System.out.println ( "Your funny Instagram name is: " + color + "_" + ate);
+    }
+}
